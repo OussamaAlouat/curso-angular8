@@ -5,8 +5,10 @@
     <li>Vegetación: {{vegetacion}}</li>
     <li>
       <span *ngIf="abierto">Abierto</span>
-      <span *ngIf="!abierto">Cerrado</span>      
+      <span *ngIf="!abierto">Cerrado</span>
     </li>
 
   </ol>
+
+  <button (click)="emitirEvento()">Mostrar en el padre</button>
 </div>
