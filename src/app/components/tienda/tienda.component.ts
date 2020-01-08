@@ -21,6 +21,5 @@ export class TiendaComponent {
 
   verDatosParque(event) {
     this.miParque = event;
-    console.log(event);
   }
 }
