@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'parques',
@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 })
 
 export class ParquesComponent {
-  public nombre: string;
-  public metros: number;
+  @Input() nombre: string;
+  @Input('metros_cuadrados') metros: number;
   public vegetacion: string;
   public abierto: boolean;
 
