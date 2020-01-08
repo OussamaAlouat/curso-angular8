@@ -1,11 +1,11 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit } from '@angular/core';
 
 @Component({
   selector: 'parques',
   templateUrl: './parques.component.html'
 })
 
-export class ParquesComponent implements OnChanges{
+export class ParquesComponent implements OnChanges, OnInit{
   @Input() nombre: string;
   @Input('metros_cuadrados') metros: number;
   public vegetacion: string;
@@ -22,6 +22,10 @@ export class ParquesComponent implements OnChanges{
 
   ngOnChanges(changes) {
     console.log(changes);
+  }
+
+  ngOnInit() {
+    console.log('Executed onInit');
   }
 
   emitirEvento() {
