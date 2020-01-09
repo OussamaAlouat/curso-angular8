@@ -4,6 +4,7 @@ import {FormsModule}   from '@angular/forms';
 
 // Importar nuestro nuevo modulo
 import { ModuloEmailModule } from './moduloemail/modulo-email.module';
+import { AdminModule } from './admin/admin.module';
 
 import { routing, appRoutingProviders } from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +33,8 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     AppRoutingModule,
     FormsModule,
     routing,
-    ModuloEmailModule
+    ModuloEmailModule,
+    AdminModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

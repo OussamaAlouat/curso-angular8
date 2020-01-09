@@ -1,7 +1,7 @@
 // Importar modulos necesarios para crear modulos
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {FormsModule}   from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
 
 // Importar componentes
 import { GuardarEmailComponent } from './components/guardar-email/guardar-email.component';
