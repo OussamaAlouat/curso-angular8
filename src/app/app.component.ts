@@ -12,4 +12,8 @@ export class AppComponent implements DoCheck {
   ngDoCheck() {
     this.emailContacto = localStorage.getItem('emailContacto')
   }
+
+  removeEmail() {
+    localStorage.removeItem('emailContacto')
+  }
 }

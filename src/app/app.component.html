@@ -9,6 +9,8 @@
 
   <span *ngIf="emailContacto">
     <strong> Email de contacto:</strong> {{emailContacto}}
+    <button (click)="removeEmail()">Eliminar email de contacto</button>
+
   </span>
   <hr>
   <router-outlet></router-outlet>
