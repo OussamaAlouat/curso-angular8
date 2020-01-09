@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule}   from '@angular/forms';
 
-import { routing, appRoutingProviders } from './app.routing';
+// Importar nuestro nuevo modulo
+import { ModuloEmailModule } from './moduloemail/modulo-email.module';
 
+import { routing, appRoutingProviders } from './app.routing';
 import { AppRoutingModule } from './app-routing.module';
 
 // Components
@@ -30,6 +32,7 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     AppRoutingModule,
     FormsModule,
     routing,
+    ModuloEmailModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
