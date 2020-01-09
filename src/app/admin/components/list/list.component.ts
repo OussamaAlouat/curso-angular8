@@ -6,4 +6,5 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 })
 export class ListComponent {
   title = 'Listado';
+  public numbers =  [0,1,2,3,4,5]
 }
