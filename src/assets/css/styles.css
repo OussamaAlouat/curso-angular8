@@ -11,3 +11,7 @@
 .jumbotron a.btn {
   margin-left: 5px;;
 }
+
+.navbar-nav .active{
+  border-bottom:3px solid orange;
+}
