@@ -1,4 +1,4 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,9 @@ import { Component, DoCheck } from '@angular/core';
 })
 export class AppComponent implements DoCheck {
   title = 'Curso de angular 8 avanzado ';
+  public emailContacto: string;
 
   ngDoCheck() {
-    console.log('Executed doCheck');
+    this.emailContacto = localStorage.getItem('emailContacto')
   }
 }
