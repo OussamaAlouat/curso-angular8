@@ -38,4 +38,55 @@
   border-radius: 2px;
   background: #ccc;
   border: 1px solid red;
+  display: block;
+  width: 100px;
+}
+
+.caja_animada {
+  background: green;
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  animation-name: rotacion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes deslizamiento1 {
+  from {
+    margin-left: 0px;
+   }
+  to {
+    margin-left: 400px;
+    background: red;
+  }
+}
+
+@keyframes deslizamiento {
+  0% {
+    margin-left: 0px;
+   }
+  50% {
+    margin-left: 400px;
+    background: red;
+    border-radius: 1000px;
+  }
+  75% {
+    margin-left: 0px;
+    background: yellow;
+    border-radius: 0px;
+  }
+  100% {
+    background: green;
+  }
 }
