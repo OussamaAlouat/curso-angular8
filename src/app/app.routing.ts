@@ -10,14 +10,14 @@ import { HomeComponent } from './components/home/home.component';
 import { KeepersComponent } from './components/keepers/keepers.component';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'tienda', component: TiendaComponent},
-  {path: 'animales', component: AnimalsComponent},
-  {path: 'contacto', component: ContactComponent},
-  {path: 'cuidadores', component: KeepersComponent},
-  {path: '**', component: HomeComponent},
+  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'tienda', component: TiendaComponent },
+  { path: 'animales', component: AnimalsComponent },
+  { path: 'contacto', component: ContactComponent },
+  { path: 'cuidadores', component: KeepersComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 export const appRoutingProviders:any[] = [];
