@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule}   from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Importar nuestro nuevo modulo
 import { ModuloEmailModule } from './moduloemail/modulo-email.module';
@@ -29,6 +30,7 @@ import { KeepersComponent } from './components/keepers/keepers.component';
     KeepersComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
